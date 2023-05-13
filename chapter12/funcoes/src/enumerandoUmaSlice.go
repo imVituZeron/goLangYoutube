@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	//sliceInt := []int{1, 2, 3, 4, 5, 6, 17}
-	value := soma()
+	sliceInt := []int{1, 2, 3, 4, 5, 6, 17}
+	value := soma(sliceInt...)
 	fmt.Println(value)
 }
 
