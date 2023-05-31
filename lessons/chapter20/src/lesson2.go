@@ -25,6 +25,6 @@ func main() {
 	p1 := person{"Vitor", "Santos", 45}
 	p2 := person{"Sara", "Stefani", 43}
 
-	talkToMe(&p1)
+	talkToMe(&p1) // quando voce passa o endereco de p1 voce ta passando os metodos dele tambem.
 	talkToMe(&p2)
 }
