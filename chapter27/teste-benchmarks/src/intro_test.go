@@ -36,3 +36,15 @@ func TestMulti(t *testing.T) {
 		t.Error("Expected:", resultado, "Got", teste)
 	}
 }
+
+func BenchmarkSoma(b *testing.B){
+	for i := 0; i > b.N; i++ {
+		Soma(1,1)
+	}
+}
+
+func BenchmarkMulti(b *testing.B){
+	for i := 0; i > b.N; i++ {
+		multi(1,2)
+	}
+}
